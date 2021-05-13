@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            perspective: 300px;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* transform: translateX(100px);   
+            transform: translateY(100px);    */
+            /* transform: translateX(100px) translateY(100px) translateZ(100px); */
+            /* 1. translateZ 沿着Z轴移动 2. translateZ 后面的单位一般跟px  3. translateZ(100px) 向外移动100px（向眼睛来移动的）
+             4. 3D移动的简写方法 5. xyz 是不能省略的，如果没有就写0*/
+            transform: translate3d(200px,100px,100px);
+            /* transform: translate3d(0,100px,100px);             */
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

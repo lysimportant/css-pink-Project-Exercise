@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?j7oaxv');
+  src:  url('fonts/icomoon.eot?j7oaxv#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?j7oaxv') format('truetype'),
+    url('fonts/icomoon.woff?j7oaxv') format('woff'),
+    url('fonts/icomoon.svg?j7oaxv#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+        }
+        /* div::before {
+            content: 'I';
+        } */
+        /* div::after div::before 的权重是2 */
+        /* div::after {
+            content: 'You';
+            color: plum;
+        } */
+        .box1 {
+            position: relative;
+            margin:  0 auto;
+            width: 200px;
+            height: 20px;
+            line-height: 20px;
+            border:1px solid pink;
+        }
+        .box1::after {
+            position: absolute;
+            right: 5px;
+            height: 20px;
+            /* top: 2px; */
+            font-family: 'icomoon';
+            /* content: ''; */
+            content: '\e901';
+            color: pink;
+        } 
+    </style>
+</head>
+<body>
+    <div class="box">
+        Love
+    </div>
+     <div class="box1">
+        dw
+     </div>
+</body>
+</html>

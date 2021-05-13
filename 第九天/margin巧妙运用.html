@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        ul li {
+            position: relative;
+            float: left;
+            list-style: none;
+            width: 100px;
+            height: 150px;
+            border: 1px solid pink;
+            margin-left: -1px;
+        }
+        /* ul li:hover {
+             1.盒子如果没有定位，则鼠标经过添加相对定位即可 
+            position: relative;
+            border: 1px solid red;
+        } */
+        ul li:hover {
+            /* 2.盒子li 如果有定位，则利用z-index 提高层级 */
+            z-index: 1;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

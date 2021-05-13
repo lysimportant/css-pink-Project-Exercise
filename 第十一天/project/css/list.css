@@ -1,0 +1,154 @@
+/* 声明字体图标  注意路径的变化*/
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?iuzw0b");
+  src: url("../fonts/icomoon.eot?iuzw0b#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?iuzw0b") format("truetype"),
+    url("../fonts/icomoon.woff?iuzw0b") format("woff"),
+    url("../fonts/icomoon.svg?iuzw0b#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.nav {
+  overflow: hidden;
+}
+/* list的专有样式 */
+.sk {
+  position: absolute;
+  left: 190px;
+  top: 40px;
+  border-left: 1px solid #c81532;
+  padding: 3px 0 0 14px;
+}
+.sk_list {
+  float: left;
+}
+.sk_con {
+  float: left;
+}
+.sk_list ul li {
+  float: left;
+}
+.sk_list ul li a {
+  display: block;
+  line-height: 47px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  padding: 0 30px;
+}
+.sk_con ul li {
+  float: left;
+}
+.sk_con ul li a {
+  display: block;
+  line-height: 49px;
+  font-size: 14px;
+  padding: 0 20px;
+}
+.sk_con ul li:last-child a::after {
+  font-family: "icomoon";
+  content: "\e931";
+  padding-left: 2px;
+}
+.sk_bd {
+  position: relative;
+  margin-top: 25px;
+}
+.sk_bd ul li {
+  position: relative;
+  margin: 0 10px 10px 0;
+  border: 1px solid transparent;
+  float: left;
+  width: 290px;
+  height: 460px;
+}
+.sk_bd ul li img {
+  display: inline-block;
+  /* text-align: center; */
+  margin-left: 4px;
+}
+.sk_bd ul li h3 {
+  padding-left: 10px;
+  /* margin-top: 25px; */
+  font-weight: 400;
+  font-size: 14px;
+  color: #666666;
+}
+.sk_bd ul li h1 {
+  padding-left: 10px;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 22px;
+  /* font-weight: 400; */
+  color: #e60012;
+}
+.sk_bd ul li h1 i {
+  font-size: 14px;
+}
+.sk_bd ul li h1 span {
+  font-size: 14px;
+  color: #a4a4a4;
+  text-decoration: line-through;
+}
+.sk_bd ul li .tranisition {
+  display: inline-block;
+  /* overflow: hidden; */
+  margin: 8px 0 8px 75px;
+  width: 132px;
+  height: 14px;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+.sk_bd ul li .tranisition span {
+  display: block;
+  border-radius: 5px;
+  width: 100px;
+  height: 100%;
+  color: red;
+  background-color: red;
+  transition: width 1s;
+}
+.sk_bd ul li .tranisition:hover span {
+  width: 130px;
+}
+/* .tranisition::before {
+  position: absolute;
+  left: 16px;
+  top: 390px;
+  content: "已售87%";
+} */
+.sk_bd ul li .zuo {
+  position: absolute;
+  left: 20px;
+  top: 380px;
+}
+.sk_bd ul li .you {
+  position: absolute;
+  right: 20px;
+  top: 380px;
+}
+.sk_bd ul li span i {
+  color: red;
+}
+/* .tranisition::after {
+  position: absolute;
+  right: 16px;
+  top: 393px;
+  content: "剩余29件";
+} */
+.sk_bd ul li .shop {
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #b1191a;
+}
+.sk_bd ul li:hover {
+  border: 1px solid #c81532;
+}
+.footer {
+  margin-top: 280px;
+}

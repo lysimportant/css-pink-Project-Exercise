@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:first-of-type {
+            background-color: pink;
+        }
+        ul li:last-of-type {
+            background-color: pink;
+        }
+        ul li:nth-of-type(even) {
+            background-color: skyblue;
+        }
+        /* :nth-child() 执行时 会把所有的盒子进行排序列号 */
+        /* 执行的时候首先看 :nth-child(1) 之后再回去看 前面的div 执行一次匹配不到 div*/
+        section div:nth-child(1) {
+            background-color: pink;
+        }
+        /* :nth-of-type() 执行时 会把指定的元素盒子进行排序列号 */
+        /* 执行的时候首先看 div指定的元素 之后再回去看 :nth-of-type(1) 第几个孩子*/
+        section div:nth-of-type(1) {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+    <!-- 区别 -->
+    <section>
+        <p>liang</p>
+        <div>hua</div>
+        <div>jian</div>
+    </section>
+</body>
+</html>

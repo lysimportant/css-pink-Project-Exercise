@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .father {
+            margin-left: 15%;
+            height: 20px;
+            width: 350px;
+            border: 1px solid red;
+            border-radius: 10px;
+        }
+        .son {
+          
+            height: 100%;
+            width: 50%;
+            background-color: pink;
+            transition: all 1s;
+            border-radius: 10px;
+        }
+        .father:hover .son {
+            width: 100%;
+        }
+        .father .son::before {          
+            content: '已售87%';
+            height: 100%;
+            line-height: 100%;
+            float: left;
+            margin-left: -70px;
+        }
+        .box .father span {
+            float: right;
+            margin-top: -20px;
+            margin-right: -70px;
+            /* font-size: 12px; */
+            
+        }
+        .box {
+            margin: 100px auto;
+            /* text-align: center; */
+            height: 600px;
+            width: 500px;
+            background-color: skyblue;
+        }
+        .box h3 {
+            margin: 30px 0;
+            font-weight: 400;
+        }
+        .box .money h4 {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 400;
+            color: red;
+        }
+        .box .money span {
+            font-size: 16px;
+            color: #cccccc;
+            text-decoration: line-through;
+        }
+        .box .button {
+            margin-top: 15px;
+            height: 100px;
+            width: 100%;
+            background-color:red;
+        }
+        .box .button h4 {
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-size: 50px;
+            font-weight: 400;
+            color: white;
+         }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="images/pink.jpg" alt="">
+        <h3>Apple苹果iPhone 6s Plus (A1699) 32G </h3>
+        <div class="money"><h4>￥6088</h4><span>￥6988</span></div>
+        <div class="father">
+            <div class="son">
+            </div>
+            <span>剩余29件</span>
+        </div>
+        <div class="button">
+                <h4>立即抢购</h4>
+        </div>
+    </div>
+</body>
+</html>

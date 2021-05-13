@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 打开页面一打开，一个盒子就从左边走到右边 */
+        /* 1. 定义动画 */
+        @keyframes move {
+            /* from 和 to 等价于 0% 和 100% */
+            /* 动画序列 1. 可以做多个状态的变化 keyframes 关键帧 */
+                    /* 2. 里面的百分比要是整数 */
+                    /* 3. 里面的百分比就是 总的时间（这案例10s）的规划 25% * 10 = 2.5s ||0s 2.5s 5s 7.5s 10s */
+            /* 开始状态 */
+            from {
+                transform: translateX(0,0);
+            }
+            25% {
+                transform: translate(1000px,0);
+            }
+            50% {
+                transform: translate(1000px,500px);
+            }
+            75% {
+                transform: translate(0px,500px);
+            }
+            /* 结束状态 */
+            to  {
+                transform: translateX(0,0);
+            }
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 2.调用动画 调用动画 持续时间 */
+            animation-name: move;
+            animation-duration: 10s;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

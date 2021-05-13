@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+        li {
+            /* float: left; */
+            /* margin: 0 20px; */
+            list-style: none;
+        }
+        .tb-promo {
+            position: relative;
+            width: 520px;
+            height: 280px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+        .tb-promo img {
+            width: 520px;
+            height: 280px;
+        }       
+        .prev {        
+            left: 0;
+            border-radius: 0 15px 15px 0;
+        }
+        .next {
+            right: 0; 
+            border-radius: 15px 0 0 15px;        
+        }
+        .promo-nav {
+            position: absolute;
+            left: 50%;
+            margin-left: -35px;
+            bottom: 15px;
+            width: 70px;
+            height: 13px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 7px;
+            /* background-color: pink; */
+        }
+        .promo-nav li {
+            float: left;
+            border-radius: 50%;
+            margin: 3px;
+            width: 8px;
+            height: 8px;
+            background-color: #ffffff;
+        }
+        .prev,.next {
+            position: absolute;
+            /* left: 50%;
+            margin-left: -260px; */
+            top: 50%;
+            margin-top: -15px;
+            text-align: center;
+            color: #ffffff;
+            line-height: 30px;
+            /* 加了绝对定位的盒子可以直接设置 宽和高 */
+            width: 20px;
+            height: 30px;
+            background: rgba(0,0,0,0.3);
+        }
+        .promo-nav  .red  {
+            background-color: #ff5000;
+        }
+    </style>
+</head>
+<body>
+    <div class="tb-promo">
+            <img src="images/tb.jpg" alt="">
+            <!-- 左侧按钮 -->
+            <a href="#" class="prev"> &lt; </a>
+            <!-- 右侧按钮 -->
+            <a href="#" class="next"> &gt; </a>
+            <ul class="promo-nav">
+                <li class="red"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="853b90f1-5446-428b-a789-9de3daf65975" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1lm58VZt8QiNwb9zIwQOkWcqsnG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.优先级.html">
+    <configuration name="优先级.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/第五天/优先级.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="案例总结.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/第五天/案例总结.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="盒子边框案例.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/第五天/盒子边框案例.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="表格细线化.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/第五天/表格细线化.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="盒子border.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/第五天/盒子border.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.盒子border.html" />
+        <item itemvalue="JavaScript Debug.优先级.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="853b90f1-5446-428b-a789-9de3daf65975" name="Default Changelist" comment="" />
+      <created>1608189271978</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608189271978</updated>
+      <workItem from="1608189274407" duration="902000" />
+      <workItem from="1608191003998" duration="3826000" />
+      <workItem from="1608201031896" duration="889000" />
+      <workItem from="1608204923647" duration="6465000" />
+      <workItem from="1608245246930" duration="940000" />
+      <workItem from="1608251021700" duration="8155000" />
+      <workItem from="1608266589378" duration="873000" />
+      <workItem from="1608267479095" duration="2311000" />
+      <workItem from="1608277029724" duration="809000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

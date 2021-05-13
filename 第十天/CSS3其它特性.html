@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter图片模糊处理</title>
+    <style>
+        img {
+        /* blur 是一个函数 小括号里面的数值越大，图片就越模糊 注意数值要加单位 px */
+            filter: blur(3px);
+        }
+        img:hover {
+            filter: blur(0);
+        }
+    </style>
+</head>
+<body>
+    <img src="images/pink.jpg" alt="">
+</body>
+</html>

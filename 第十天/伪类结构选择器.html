@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选择ul 里面的第一个孩子 小li */
+        ul li:first-child {
+            list-style: none;
+            color: royalblue;
+            background-color: salmon;
+        }
+        /* 选择ul 里面的最后一个孩子 li */
+        ul li:last-child {
+            list-style: none;
+            color: pink;
+            background-color: sandybrown;
+        }
+        /* 选择ul 里面的第6个孩子 括号里面的数字可以改变 （n） n 可以是数字和关键字和公式 */
+        ul li:nth-child(6) {
+            list-style: none;
+            color: blue;
+            background-color: chartreuse;
+        }
+        /* 关键字：even 选择为 偶数个的类 */
+        ul li:nth-child(odd) {
+            list-style: none;
+            color: chartreuse;
+            background-color: crimson;
+        }
+        /* 关键字：odd 选择为 奇数个的类 */
+        ul li:nth-child(even) {
+            list-style: none;
+            color: rebeccapurple;
+            background-color: skyblue;
+        }
+        /* :nth-child(n) 从0开始 每次加一 往后计算  这里面必须是n 不能是其它的字母  0自动忽略 超出后自动忽略 */
+        ol li:nth-child(n) {
+            color: white;
+            background-color: deeppink;
+        }
+        /* :nth-child(2n)  选择了所有的偶数孩纸 等价于 even */
+        ol li:nth-child(2n) {
+            color: red;
+            background-color: deeppink;
+        }
+        /* :nth-child(2n+1)  选择了所有的奇数孩纸 等价于 odd */
+        ol li:nth-child(2n+1) {
+            color: skyblue;
+            background-color: deeppink;
+        }
+        /* 从第五个开始 逐次加5 直到完成 */
+        ol li:nth-child(5n) {
+            color: green;
+            background-color: deeppink;
+        }
+        /* 从第五个开始 直到完成 数值可以改变 n+？（？任意数） */
+        ol li:nth-child(n+3) {
+            color: orange;
+            background-color: deeppink;
+        }
+        /* 前六个 开始包含第六个  */
+        ol li:nth-child(-n+6) {
+            color: skyblue;
+            background-color: deeppink;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>dsadsads</li>
+        <li>dsadsads</li>
+        <li>dsadsads</li>
+        <li>dsadsads</li>
+        <li>dsadsads</li>
+        <li>dsadsads</li>
+        <li>dsadsads</li>
+        <li>dsadsads</li>
+    </ul>
+    <ol>
+        <li>dsadsads</li>
+        <li>dsadsads</li>
+        <li>dsadsads</li>
+        <li>dsadsads</li>
+        <li>dsadsads</li>
+        <li>dsadsads</li>
+        <li>dsadsads</li>
+        <li>dsadsads</li>
+    </ol>
+</body>
+</html>

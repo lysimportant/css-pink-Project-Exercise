@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+            transform-origin: left bottom;
+        }
+        div:hover {
+            /* 1.里面跟数字 不跟单位 就是 倍数的意思 1 就是 1倍 2就是 2倍 */
+            /* transform: scale(x,y); */
+            /* transform: scale(2,2); */
+            /* 2.修改了宽度为原来的2倍 高度不变  可以小数*/
+            /* transform: scale(2,1); */
+            /* 3.等比例缩放 同时修改宽度和高度 简单的写法  以下是 宽度修改了两倍，高度默认和第一个一样 */
+            /* transform: scale(2); */
+            /* 4.缩小 小于1就是缩放 也有等比例缩放 下面的第二个*/
+            /* transform: scale(0.5,0.5); */
+            /* transform: scale(0.5); */
+            /* 5.transform：scale的优势之处 不会影响其它的盒子 而且可以设置缩放的中心点 */
+            /* width: 300px;  往左右和下边扩
+            height: 300px; */
+            transform: scale(2);
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

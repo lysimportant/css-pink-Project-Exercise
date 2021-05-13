@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            /* 一会需要给 box 旋转 也需要透视 给li添加了里面的子盒子就都有了透视的效果 */
+            perspective: 500px;
+            list-style: none;
+            float: left;
+            height: 100px;
+            width: 300px;
+            margin: 0 20px;
+        }
+        .box {
+            position: relative;
+            height: 100px;
+            width: 300px;
+            transform-style: preserve-3d;
+            transition: all 1s;
+
+        }
+        .box1,.box2 {
+            position: absolute;
+            height: 100px;
+            width: 100%;
+            line-height: 100px;
+            text-align: center;
+        }
+        .box1 {
+            background-color: pink;
+            z-index: 1;
+            transform: translateZ(50px);
+        }
+        .box2 {
+            background-color: purple;
+            /* X轴必须为负值 */
+            /* 如果有移动 或者其它样式。必须先写移动 不然位置会产生偏移 */
+            transform: translateY(50px) rotateX(-90deg);
+        }
+        .box:hover {
+            transform: rotateX(90deg);
+        }
+        /* 两个小盒子在一起后面的向前扑到90度 并且向下走自身或前面盒子的一半高，写样式时移动要写在最前面，
+           再让第一个盒子走第二个盒子的z轴一般宽 注意要给它们的父盒子添加3d样式保持 然后过渡效果 */
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <div class="box">
+                <div class="box1">1</div>
+                <div class="box2">2</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="box1">1</div>
+                <div class="box2">2</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="box1">1</div>
+                <div class="box2">2</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="box1">1</div>
+                <div class="box2">2</div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

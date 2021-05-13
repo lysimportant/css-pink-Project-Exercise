@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            font-size: 20px;
+            overflow: hidden;
+            width: 0;
+            height: 30px;
+            /* 让文字强制一行内显示 */
+            white-space: nowrap;
+            background-color: pink;
+            /* steps 就是分几步完成动画 有了steps 就不要再写ease 或 linear 了 */
+            animation: w 4s steps(10) forwards;
+        }
+        @keyframes w {
+            from { 
+                width: 0;
+            }
+            to {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>世纪佳缘我在这里等你</div>
+</body>
+</html>

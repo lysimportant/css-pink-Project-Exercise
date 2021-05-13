@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        div  {
+            height: 80px;
+            width: 150px;
+            background-color: pink;
+            margin: 100px auto;
+            /*这个单词的意思是如果文字显示不开自动换行*/
+            /*white-space: normal;*/
+            /*1.这个单词的意思是如果文字显示不开也必须强制一行内显示*/
+            white-space: nowrap;
+            /*2.溢出的部分隐藏起来*/
+            overflow: hidden;
+            /* 3。文字溢出的部分用省略号来显示 */
+            text-overflow: ellipsis;
+         }
+    </style>
+</head>
+<body>
+    <div>
+    {啥也不说，此处省略一万字QAQ}        
+    </div>
+</body>
+</html>

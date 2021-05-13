@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* 透视写到被观察元素的父盒子上面  给予固定的值 然后给 translateZ（不同的值） 实现近大远小的立体效果*/
+            perspective: 150px;
+        }
+        div {
+            margin: 100px auto;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transform: translateZ(0);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
